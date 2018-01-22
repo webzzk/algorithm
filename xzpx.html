@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	 const findSmallest  = arr => {
+	 	let smallest = arr[0]
+	 	let smallest_index = 0
+	 	for(i in arr) {
+	 		if(arr[i] < smallest) {
+	 			smallest = arr[i]
+	 			smallest_index = i
+	 			console.log()
+	 		}
+	 	}
+	 	return smallest_index
+	 }
+
+	 const selectionSort = arr => {
+	 	let newArr = []
+	 	for (i in arr) {
+	 		let smallest = findSmallest(arr)
+	 		newArr.push(arr.pop(smallest))
+	 	}
+	 	console.log(newArr)
+	 	return newArr
+	 }
+	 selectionSort([4,9,8,5,3,1,7])
+</script>
