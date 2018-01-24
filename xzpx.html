@@ -12,10 +12,11 @@
 	 	let smallest = arr[0]
 	 	let smallest_index = 0
 	 	for(i in arr) {
+	 		console.log('i',arr[i])
 	 		if(arr[i] < smallest) {
 	 			smallest = arr[i]
 	 			smallest_index = i
-	 			console.log()
+	 			// console.log(smallest_index)
 	 		}
 	 	}
 	 	return smallest_index
@@ -25,10 +26,11 @@
 	 	let newArr = []
 	 	for (i in arr) {
 	 		let smallest = findSmallest(arr)
-	 		newArr.push(arr.pop(smallest))
+	 		// console.log('smallest',smallest)
+	 		// newArr.push(arr.pop(smallest))
 	 	}
 	 	console.log(newArr)
 	 	return newArr
 	 }
-	 selectionSort([4,9,8,5,3,1,7])
+	 selectionSort([7,5,9,4,1,6])
 </script>
